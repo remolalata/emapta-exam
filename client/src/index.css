@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import "tailwindcss";
+
+html,
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-style: normal;
+  @apply bg-gray-200;
+}
+
+.referral-table {
+  @apply table-auto w-full;
+
+  thead {
+    @apply font-bold text-gray-400 text-left border-b border-gray-300;
+  }
+
+  th,
+  td {
+    @apply py-2 px-0;
+  }
+
+  tbody tr {
+    @apply border-b border-gray-300;
+  }
+
+  tbody,
+  tr:last-of-type {
+    @apply border-0;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+}

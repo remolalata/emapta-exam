@@ -1,0 +1,29 @@
+[
+  {
+    "given_name": "John",
+    "surname": "Johnson",
+    "email_address": "jh@email121.com",
+    "phone_number": "0453-283-283",
+    "home_numner": "#498",
+    "street_name": "Galaban Street",
+    "suburb": "Poblacion",
+    "state": "Pangasinan",
+    "postcode": "2430",
+    "country": "Philippines",
+    "avatar": "https://randomuser.me/api/portraits",
+    "id": "1737645167832"
+  },
+  {
+    "given_name": "remo",
+    "surname": "lalata",
+    "email_address": "remo@gmail.com",
+    "phone_number": "123 12312 1",
+    "home_number": "",
+    "street_name": "",
+    "suburb": "",
+    "state": "",
+    "postcode": "",
+    "country": "",
+    "id": "1737863177759"
+  }
+]
