@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { toast } from "react-toastify";
 import { SubmitHandler } from "react-hook-form";
@@ -10,21 +10,29 @@ import AddressForm from "~components/form/ReferralForm/AddressForm";
 import Button from "~components/common/Button";
 
 import { useCustomForm } from "~hooks/useCustomForm";
-import { useUser  } from "~hooks/useUser";
+import { useUser } from "~hooks/useUser";
 import { FormValues } from "~types/forms";
 
 import { TITLE, BUTTON_TEXT } from "~constants/label";
 import { API_ERROR_TEXT, USER_API } from "~root/constants/api";
 
-const ReferralForm: React.FC = () => {
+interface ReferralFormProps {
+  type?: "addUser" | "updateUser"
+}
+
+const ReferralForm: React.FC<ReferralFormProps> = ({
+  type = "addUser"
+}) => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-    reset
+    reset,
   } = useCustomForm();
 
-  const { data: users } = useSelector((state: RootState) => state.user);
+  const { data: users } = useSelector(
+    (state: RootState) => state.user
+  );
   const { addUser } = useUser();
 
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
