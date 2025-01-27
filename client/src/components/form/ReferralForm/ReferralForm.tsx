@@ -53,7 +53,7 @@ const ReferralForm: React.FC<ReferralFormProps> = ({
   };
 
   return (
-    <div className="p-12 bg-white border border-gray-300 shadow-md">
+    <div className="p-4 xl:p-12 bg-white border border-gray-300 shadow-md">
       <form onSubmit={handleSubmit(onSubmit)}>
         <h1 className="font-extrabold text-2xl text-gray-700 mb-3">{TITLE}</h1>
 

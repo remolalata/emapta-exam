@@ -16,8 +16,8 @@ const App: React.FC = () => {
 
   return (
     <>
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 items-center">
+      <div className="container mx-auto py-10 px-4 xl:px-0">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-x-10 gap-y-4 items-center">
           <ReferralForm />
           <ReferralTable />
         </div>

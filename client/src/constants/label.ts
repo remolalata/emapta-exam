@@ -45,3 +45,8 @@ export const FORM_ERRORS_TEXT = {
     POST_CODE: "Postcode is required",
     COUNTRY: "Country is required"
 }
+
+export const CONFIRM_MODAL_BUTTON_TEXT = {
+    CONFIRM: "Confirm",
+    CANCEL: "Cancel"
+}
