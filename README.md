@@ -43,3 +43,12 @@ This will concurrently run the server and the client in development mode.
 
 - **`install:all`**: Installs all dependencies for both the server and client.
 - **`dev`**: Runs both the server and client concurrently in development mode.
+
+### Testing the Client
+
+To test the client folder, run the following commands:
+
+```bash
+cd client
+npm test
+```
